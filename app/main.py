@@ -11,3 +11,8 @@ def root():
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+
+@app.get("/greeting")
+def greeting():
+    return {"message": "Hello from Aether"}
